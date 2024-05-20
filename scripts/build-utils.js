@@ -1,6 +1,6 @@
 const rollup  = require( 'rollup' ).rollup;
 const esbuild = require( 'rollup-plugin-esbuild' ).default;
-const name    = 'splide-utils';
+const name    = 'rise-slider-utils';
 
 
 function buildModule( type ) {

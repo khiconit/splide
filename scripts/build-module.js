@@ -4,7 +4,7 @@ const esbuild = require( 'rollup-plugin-esbuild' ).default;
 const banner  = require( './constants/banner' );
 const babel   = require( '@rollup/plugin-babel' );
 const path    = require( 'path' );
-const name    = 'splide';
+const name    = 'rise-slider';
 
 
 function buildModule( type ) {

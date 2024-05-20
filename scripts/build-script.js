@@ -7,7 +7,7 @@ const minify  = require( './plugins/minify' ).minify;
 const banner  = require( './constants/banner' );
 const fs      = require( 'fs' ).promises;
 const zlib    = require( 'zlib' );
-const name    = 'splide';
+const name    = 'rise-slider';
 
 
 async function buildScript( compress, type = 'default' ) {
@@ -30,7 +30,7 @@ async function buildScript( compress, type = 'default' ) {
     banner,
     file,
     format   : 'umd',
-    name     : type === 'default' ? 'Splide' : 'SplideRenderer',
+    name     : type === 'default' ? 'RiseSlider' : 'RiseSliderRenderer',
     sourcemap: compress,
   } );
 

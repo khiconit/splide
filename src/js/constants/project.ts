@@ -3,7 +3,7 @@
  *
  * @since 3.0.0
  */
-export const PROJECT_CODE = 'splide';
+export const PROJECT_CODE = 'rise-slider';
 
 /**
  * The data attribute prefix.

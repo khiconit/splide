@@ -4,7 +4,7 @@ const path         = require( 'path' );
 const postcss      = require( 'postcss' );
 const cssnano      = require( 'cssnano' );
 const autoprefixer = require( 'autoprefixer' );
-const name         = 'splide';
+const name         = 'rise-slider';
 
 const files = [
   './src/css/core/index.scss',
@@ -30,7 +30,7 @@ function buildCss( file ) {
       return fs.writeFile( outFile, result.css ).then( () => result );
     } )
     .then( result => {
-      if ( outFile.includes( 'splide-default' ) ) {
+      if ( outFile.includes( 'reise-slider-default' ) ) {
         const dir = path.dirname( outFile ).split( '/' ).slice( 0, -1 ).join( '/' );
         return fs.writeFile( `${ dir }/${ name }.min.css`, result.css ).then( () => result );
       }
