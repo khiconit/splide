@@ -59,8 +59,9 @@ export function EventBinder(): EventBinderObject {
       const isEventTarget = 'addEventListener' in target;
       const remover = isEventTarget
         ? target.removeEventListener.bind( target, event, callback, options )
+        // @ts-ignore
         : target[ 'removeListener' ].bind( target, callback );
-
+        // @ts-ignore
       isEventTarget ? target.addEventListener( event, callback, options ) : target[ 'addListener' ]( callback );
       listeners.push( [ target, event, namespace, callback, remover ] );
     } );

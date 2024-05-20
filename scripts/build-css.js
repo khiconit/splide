@@ -30,7 +30,7 @@ function buildCss( file ) {
       return fs.writeFile( outFile, result.css ).then( () => result );
     } )
     .then( result => {
-      if ( outFile.includes( 'reise-slider-default' ) ) {
+      if ( outFile.includes( 'rise-slider-default' ) ) {
         const dir = path.dirname( outFile ).split( '/' ).slice( 0, -1 ).join( '/' );
         return fs.writeFile( `${ dir }/${ name }.min.css`, result.css ).then( () => result );
       }

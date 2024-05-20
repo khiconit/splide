@@ -1,9 +1,9 @@
 $size: 20px !default;
 $border: 2px solid #999 !default;
 
-.splide {
+.rise-slider {
   &__spinner {
-    animation: splide-loading 1s infinite linear;
+    animation: rise-slider-loading 1s infinite linear;
     border: $border;
     border-left-color: transparent;
     border-radius: 50%;
